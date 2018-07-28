@@ -1,9 +1,11 @@
 /* Global Styles */
 
-body {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+html, body {
+    font-family: "Goudy Bookletter 1911", sans-serif;
     color: #777777;
     min-width: 960px;
+    background-image: url(../images/dust_scratches.png);
+    background-color: lightgray;
 }
 
 h1 {
@@ -216,4 +218,74 @@ footer p{
     text-align: center;
     margin: auto;
     color:#000000
+}
+
+
+/** media Query's **/
+
+
+@media screen and (max-width: 1112px) {
+    .aside img{
+        width:40%;
+        float: left;
+        padding-right: 15px;        
+    }
+
+    .main_content {
+        width:90%;
+        margin-left: 6%;
+        margin-bottom: 15px;
+        padding:15px;
+    }
+
+    .masthead-name{
+        margin-left: 6%;
+    }
+
+    .contact-content {
+        width:230px;
+        position: static;
+        margin-top: 15px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .aside img{
+        width:60%;
+        padding-bottom: 15px;
+        float: left;
+        padding:15px;
+        padding-left: 0px;
+
+        
+    }
+
+    .contact-content {
+        width:90%;
+    }
+
+
+}
+
+@media screen and (max-width: 640px) {
+    .aside img{
+        width:90%;
+        margin-left: 5%;
+        padding-bottom: 15px;
+        
+    }
+
+    .masthead-navigation {
+        width:90%;
+        margin: 0px;
+        margin-top: 19px;
+        margin-left: 5%;
+    }
+    
+    .masthead-navigation ul li {
+        padding-right: 12%;
+        border:1px solid #999999;
+    }
 }
